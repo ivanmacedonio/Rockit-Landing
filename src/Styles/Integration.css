@@ -1,0 +1,91 @@
+.integrationApp {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.appIcons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.appText {
+    font-family: 'raleway';
+
+}
+
+.appIcons img {
+    max-height: 8rem;
+}
+
+.appText h2 {
+    margin-bottom: 0;
+    color: gray;
+    font-size: 1.2rem;
+}
+
+.appText h1 {
+    color: rgb(62, 62, 62);
+    font-size: 1.6rem;
+}
+
+.appText p {
+    font-size: 1.1rem;
+    color: gray;
+    font-weight: 500;
+    line-height: 30px;
+    max-width: 80%;
+}
+
+.integrationApi {
+    display: flex;
+    align-items: center;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.integrationApi img {
+    max-width: 120%;
+    height: auto;
+}
+
+.apiImage {
+    max-width: 100%;
+}
+
+@media(max-width: 768px) {
+    .integrationApp {
+        flex-direction: column-reverse;
+        max-width: 90%;
+        gap: 2rem;
+    }
+
+    .appText {
+        padding-left: 2rem;
+    }
+
+    .integrationApi {
+        flex-direction: column;
+        max-width: 90%;
+        gap:5rem;
+    }
+
+    .integrationApi img {
+        max-width: 100%;
+    }
+
+    .integrationApi a {
+        background-color: rgb(55, 149, 249);
+        color: white;
+        padding: 0.5rem 2rem;
+        border-radius: 0.7rem;
+        display: flex;
+        gap: 0.5rem;
+        text-wrap: nowrap;
+        align-items: center;
+        width: fit-content;
+
+    }
+}

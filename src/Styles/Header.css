@@ -1,0 +1,89 @@
+.logoContainer img {
+    max-width: 10rem;
+}
+
+.headerContainer {
+    font-family: 'raleway';
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.linksContainer {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.linksContainer a {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgb(85, 85, 85);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s ease;
+    padding-bottom: 5px;
+}
+
+.linksContainer a:hover {
+    border-bottom: 2px solid rgb(55, 149, 249);
+}
+
+#btn-contact {
+    background-color: rgb(55, 149, 249);
+    color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 0.7rem;
+    display: flex;
+    gap: 0.5rem;
+    text-wrap: nowrap;
+    align-items: center;
+}
+
+#btn-contact img {
+    max-width: 1.5rem;
+}
+.linksContainerMobile,
+.linksMobile {
+    display: none;
+}
+
+
+
+@media(max-width: 768px) {
+    .linksContainer {
+        display: none;
+    }
+
+    .linksContainerMobile {
+        display: flex;
+        
+    }
+
+    .linksContainerMobile img {
+        max-width: 4rem;
+        padding-right: 3rem;
+    }
+
+    .linksMobile {
+        font-family: 'raleway';
+        display: flex !important;
+        flex-direction: column;
+        padding-left: 2rem;
+        padding-top: 2rem;
+        overflow: hidden;
+        height: 0;
+        opacity: 0;
+    }
+
+    .linksMobile a {
+        margin-bottom: 2rem;
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+
+    #btn-contact {
+        width: 40%;
+    }
+}

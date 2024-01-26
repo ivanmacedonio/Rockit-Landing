@@ -1,0 +1,75 @@
+.tips {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0;
+}
+
+.tip {
+    display: flex;
+    font-family: 'raleway';
+    gap: 2rem;
+    align-items: center;
+    color: rgb(88, 88, 88);
+}
+
+.tip img {
+    max-width: 4rem;
+}
+
+.tip h2 {
+    font-weight: 500;
+}
+
+.paralax {
+    font-family: 'raleway';
+    color: white;
+    background-image: url('../assets/paralax.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    background-attachment: fixed;
+    margin-bottom: 5rem;
+}
+
+.paralax h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+.paralax p {
+    font-size: 1.3rem;
+}
+
+.paralax a {
+    border: 1px solid white;
+    padding: 0.5rem 2rem;
+    border-radius: 0.4rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+@media(max-width: 768px) {
+    .tips {
+        flex-direction: column;
+        padding-left: 2rem;
+        gap: 0;
+    }
+
+    .tips h2 {
+        font-size: 1.4rem;
+    }
+    .paralax h1{
+        font-size: 2rem;
+    }
+    .paralax h1, .paralax p{
+        padding-left: 2rem;
+    }
+
+}
